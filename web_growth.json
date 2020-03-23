@@ -1,0 +1,40 @@
+{
+  "growth": [
+    {
+      "year": "1989",
+      "users": "N/A",
+      "population": "N/A",
+      "event": "Sir Time Berners-Lee invents WWW"
+    },
+    {
+      "year": "1994",
+      "users": "N/A",
+      "population": "N/A",
+      "event": "W3C is founded"
+    },
+    {
+      "year": "1999",
+      "users": "284 million",
+      "population": "4.1%",
+      "event": "Founding of Craigslist"
+    },
+    {
+      "year": "2004",
+      "users": "768 million",
+      "population": "12.1%",
+      "event": "Lauching of Mozilla Firefox"
+    },
+    {
+      "year": "2010",
+      "users": "1,968 million",
+      "population": "29.5%",
+      "event": "Creation of Instragram and Pinterest"
+    },
+    {
+      "year": "2015",
+      "users": "3,318 million",
+      "population": "45.7%",
+      "event": "FDC keeps Net Neutrality"
+    }
+  ]
+}

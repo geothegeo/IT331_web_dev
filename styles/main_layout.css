@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document */
+/* general setup */
+* {
+	margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+	margin: 0 auto;
+	font-family: Merienda, Open Sans, Helvetica, sans-serif;      
+}
+
+a, a:link, a:visited {
+	text-decoration: none;
+	color: rgb(35, 38, 185);
+}
+a:hover {
+	color: rgb(61, 175, 57);
+}
+
+/* navigation */
+nav {
+	border-bottom: 2px solid #DEFF98;
+}
+.navTxt {
+	color: rgb(24, 95, 46);
+}
+nav ul {
+	text-align: center;
+}
+.nav-item {
+	font-size: 15px;
+	text-decoration: none;
+	margin: 0;
+}
+.navLi {
+	color: rgb(95, 201, 127);
+}
+.active .navLi {
+	color: rgb(0, 0, 0);
+}
+.nav-item a:hover {	
+	background:#DEFF98;
+}
+
+/* body */
+#body {
+    min-height: 100%;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.page-header h1 {
+	text-shadow: -4px 4px 6px rgb(33, 196, 27);
+	font-size: 300%;
+	margin-bottom: 20px;
+}
+
+/* index.html */
+#home-img {
+	margin: 20px;
+}
+
+/* learn_html.html, learn_css.html, learn_js.html */
+#learningList {
+	background-color: #69d499;
+	padding: 20px;
+}
+
+#learningList li {
+	padding: 5px;
+	margin-left: 35px;
+}
+
+/* references.html */
+#references details{
+	padding: 0;
+	margin: 0 0 10px 25px;
+}
+#references details ul{
+	list-style-type: none;
+}
+#references h4{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* footer */
+#body:after {
+	content: "";
+	display: block;
+}
+.footer, #body:after {
+	height: 30px;
+}
+
+.footer {
+	height: 30px;
+	padding: 1em;
+	margin: 0;
+	font-size: 90%;
+	border-top: 2px solid #DEFF98;
+}
+.footer p {
+	font-size: 14px;
+	margin: 0;
+    padding: 0;
+}
+#footnav_title {
+	margin-left: 40px;
+	font-weight: bold;
+}
+.footer ul {
+	-moz-column-count: 2;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 20px;
+    column-count: 2;
+	column-gap: 20px;
+	list-style-type: none;
+}
+.footer a, .footer a:link, .footer a:visited {
+	text-decoration: none;
+	color: rgb(78, 143, 155);
+}
+.footer a:hover {
+	color: #68cf4e;
+}
+.footer .disclaimer {
+	text-align: center;
+}
+
+
+

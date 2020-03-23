@@ -1,0 +1,118 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:spry="http://ns.adobe.com/spry">
+<head>	
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="home page of KidsWebDesign">
+	<title>Home</title>
+
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="js/index-fname.js"></script>
+	<script src="js/index-ajax.js"></script>
+	<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+	<script src="SpryAssets/SpryData.js" type="text/javascript"></script>
+	<script src="SpryAssets/SpryJSONDataSet.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var dsGrowth = new Spry.Data.JSONDataSet("web_growth.json",{path:"growth"});
+	</script>
+	<link rel="stylesheet" href="styles/main_layout.css">	
+	<link rel="stylesheet" href="styles/table_layout.css">
+</head>
+<body>		
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<a class="navbar-brand" href="index.html"><img src="img/logo.png" width="29" height="29" alt="logo"/></a>
+		<span class="navbar-text"><span class="navTxt">Kids Web Design</span></span>
+		<button class="navbar-toggler" data-toggle="collapse" data-target="#target_nav">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="target_nav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active"><a class="nav-link" href="index.html"><span class="navLi">Home</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="learn_html.html"><span class="navLi">HTML</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="learn_css.html"><span class="navLi">CSS</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="learn_js.html"><span class="navLi">JS</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="about_me.html"><span class="navLi">About Me</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="contact_me.html"><span class="navLi">Contact Me</span></a></li>
+				<li class="nav-item"><a class="nav-link" href="references.html"><span class="navLi">References</span></a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container" id="body">
+		<div class="row">
+			<div class="col-md-12">  
+				<div class="page-header">
+					<h1>Kids Web Design</h1>
+				</div>
+			</div>
+		</div>
+		<img src="img/responsive-web-design.jpg" class="img-fluid mx-auto d-block" id="home-img" alt="devices for viewing webpages">
+		<div class="row">
+			<div class="col-md-5">    
+				<div id="home-content">
+					<p id="greetings"></p>
+					<p id="introduction"></p>
+				</div>
+			</div>
+			<div class="col-md-7"> 
+				<div spry:region="dsGrowth">
+					<table id="growth">
+						<caption>The Growth of the World Wide Web</caption>
+						<tbody>
+							<tr class="title-row">
+								<th>Year</th>
+								<th># of Users</th>
+								<th>World Population</th>
+								<th>Signigicant Events</th>
+							</tr>
+							<tr spry:repeat="dsGrowth" spry:hover="rowHover" spry:setrow="dsGrowth">
+								<td>{year}</td>
+								<td>{users}</td>
+								<td>{population}</td>
+								<td>{event}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-4 sitemap">  
+					<p id="footnav_title">Navigation: </p>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="learn_html.html">HTML</a></li>
+						<li><a href="learn_css.html">CSS</a></li>
+						<li><a href="learn_js.html">JS</a></li>
+						<li><a href="about_me.html">About Me</a></li>
+						<li><a href="contact_me.html">Contact Me</a></li>
+						<li><a href="references.html">References</a></li>
+					</ul>
+				</div>
+				<div class="col-md-12 col-lg-8 disclaimer">
+					<p>&copy; 2019 Kids Web Design by George Tang. All rights reserved.
+							<a href="https://validator.w3.org/check?uri=referer"><img
+								src="http://www.w3.org/Icons/valid-xhtml10"
+								alt="Valid XHTML 1.0!" height="31" width="88" /></a>
+					</p>
+					<p>This website is developed as an educational project. Certain materials are included 
+						under the fair use exemption of the U.S. Copyright Law and have been prepared according 
+						to the multimedia fair use guidelines and are restricted from further use. Last edited on: 
+						<script>
+							//document.write(document.lastModified);
+						</script>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

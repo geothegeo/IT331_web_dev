@@ -1,0 +1,46 @@
+.form-style {
+	margin: 0 auto 50px 0;
+	max-width: 55%;
+	padding: 20px 12px 10px 20px;
+}
+
+.form-style li {
+	display: block;
+	list-style: none;
+}
+
+.form-style label{
+	font-weight: bold;
+}
+
+.form-style .radio{
+	font-weight: normal;
+}
+  
+.form-style input[type=text]:focus, 
+.form-style input[type=email]:focus,
+.form-style input[type=tel]:focus,
+.form-style select:focus,
+.form-style textarea:focus{
+	-moz-box-shadow: 0 0 8px #88D5E9;
+	-webkit-box-shadow: 0 0 8px #88D5E9;
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
+}
+
+.form-style #timer{
+	margin: 0 auto 5px 0;
+	max-width: 55%;
+	padding: 20px 12px 10px 20px;
+}
+
+.form-style input[type=submit] {
+	background: #4B99AD;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+
+.form-style .required{
+	color:red;
+}

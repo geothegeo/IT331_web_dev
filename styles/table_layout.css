@@ -1,0 +1,28 @@
+table {
+	margin: auto;
+	width: 600px;
+	border-collapse: collapse;
+	border-style: hidden;
+}
+
+table caption {
+	background-color: #4eaf7f;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: .2em;
+}
+
+table th, table td {
+	padding: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #f79646 #ccc;
+}
+
+table td {
+	text-align: right;
+}
+
+table tr.even {
+	background-color: #4eaf7f;
+}
